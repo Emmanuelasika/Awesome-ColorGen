@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Flutter Colors</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="css/waves.min.css" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.4/randomColor.min.js"></script>
+
+
+
+</head>
+ <body>
+
+<section id="light-colors" class="black">
+  
+<div class="row" >
+
+
+<div class="col s2">
+      <div onclick="" id="first" onclick="copyToClipboard('#first-value')" class="card">
+        <p id="tooltip1" class="tooltips">Click To Copy!</p>
+       <span id="first-value"></span>
+      </div>
+      <button>efefe</button>
+    </div>
+  
+
+  <div class="col s2">
+      <div id="second" class="card">
+       
+      </div>
+    </div>      
+
+<div class="col s2">
+      <div id="third" class="card">
+       
+      </div>
+    </div>    
+
+    <div class="col s2">
+      <div id="fourth" class="card">
+       
+      </div>
+    </div>   
+
+    <div class="col s2">
+      <div id="fifth" class="card">
+       
+      </div>
+    </div>   
+
+    <div class="col s2">
+      <div id="sixth" class="card">
+       
+      </div>
+    </div>    
+
+      
+</div>
+<textarea id="myText">Copy me PLEASE!!!</textarea>
+
+<button onclick="ChangeColors()">fbdfbdfbdfbfd</button>
+    
+</section>
+
+
+      
+
+
+
+
+<script type="text/javascript">
+  
+
+ 
+
+function ChangeColors(){
+
+//Ripple Effect
+  Waves.attach("#first")
+  Waves.attach("#second")
+  Waves.attach("#third")
+  Waves.attach("#fourth")
+  Waves.attach("#fifth")
+  Waves.attach("#sixth")
+  
+
+
+
+//Generator for Colors
+var john = 8;
+ var color = randomColor({
+   count: john,
+   hue: 'red'
+   
+});
+
+ // Tooltips
+
+
+  
+
+
+
+ //Values passed
+document.getElementById("first-value").innerHTML = '0XFF' + (color[0].substring(1)).toUpperCase();  
+
+//Transisions For swatches
+
+document.getElementById("first").style.transition = "background-color 2s";  
+document.getElementById("second").style.transition = "background-color 2s";  
+document.getElementById("third").style.transition = "background-color 2s";  
+document.getElementById("fourth").style.transition = "background-color 2s";  
+document.getElementById("fifth").style.transition = "background-color 2s";  
+document.getElementById("sixth").style.transition = "background-color 2s";  
+
+//ColorWorks-Light
+
+ document.getElementById("first").style.backgroundColor = color[0]; 
+
+ document.getElementById("second").style.backgroundColor = color[1]; 
+
+ document.getElementById("third").style.backgroundColor = color[2]; 
+
+  document.getElementById("fourth").style.backgroundColor = color[3];
+
+   document.getElementById("fifth").style.backgroundColor = color[4];  
+
+    document.getElementById("sixth").style.backgroundColor = color[5]; 
+
+//
+
+
+}
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+
+</script>
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      
+    
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  
+  <script src="js/init.js"></script>
+  <script src="js/waves.min.js"></script>
+
+  </body>
+</html>
+  

@@ -1,0 +1,32 @@
+
+
+#first, #second, #third, #fourth, #fifth, #sixth{
+
+  width:100%;
+  height:300px;
+}
+
+#light-colors .row{
+  padding-left:30px;
+  padding-right: 30px;
+  padding-top:20px; 
+}
+
+#first span{
+ bottom:0;   
+position: absolute;
+left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%)
+
+}
+    
+.tooltips{
+
+  margin:auto;
+  
+  padding-top:120px;
+  padding-left: 50px;
+  
+
+}
